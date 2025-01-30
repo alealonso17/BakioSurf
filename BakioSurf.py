@@ -57,7 +57,7 @@ def delete_short_videos(folder_path): #Function in which you give it a directory
                 
                 video.release()
                 if(maximum):  #If seconds introduced ( maximum value exits...)
-                    if duration < maximum: # If the duration is < 3 ;
+                    if duration <= maximum: # If the duration is < 3 ;
                         os.remove(file_path) #remove the fil 
                         print(f"Deleted: {file_path}") #Show that u removed the file
                         videos_deleted_counter +=1 #count 1 more video deleted 
