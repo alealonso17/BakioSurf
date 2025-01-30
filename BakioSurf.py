@@ -121,10 +121,11 @@ seconds_label_confirmation.pack()#Print it
 add_button = tk.Button(app, text = 'Añadir Segundos', command=add_seconds)#Bton para guardar el dato de los segundos puesto en el text anterior 
 add_button.pack() #To show it on screen 
 
-select_button = tk.Button(app, text="Select Folder", command=select_folder) # In the button we call the function for selecting the file 
-select_button.pack(pady=200)#Position of the button 
 
-app.geometry("900x900")#window dimension
+select_button = tk.Button(app, text="Selecciona la carpeta para limpiar", command=select_folder) # In the button we call the function for selecting the file 
+select_button.pack(pady=100)#Position of the button 
+
+app.geometry("900x700")#window dimension
 app.mainloop()  # to start the app 
 
 
