@@ -80,7 +80,7 @@ app.title("BAKIO SURF CLEANER")#Tittle of the window
 #Background configuration -------------------> 
 
 current_directory = os.path.dirname(os.path.abspath(__file__)) #load the curreent directory of the script 
-Background_image_path = os.path.join(current_directory, 'Background.png')#Say that the background image is always going to be with the script , so incase the folder moves for expample from desktop to documents , the file is still findable 
+Background_image_path = os.path.join(current_directory, 'data/Background.png')#Say that the background image is always going to be with the script , so incase the folder moves for expample from desktop to documents , the file is still findable 
 
 
 Background_image = tk.PhotoImage(file=Background_image_path)#Storage the image for the background 
@@ -89,7 +89,7 @@ Background_label.place(relwidth=1, relheight=1) # This makes that the background
 
 
 #Load Company logo 
-logo_image_path = os.path.join(current_directory, 'Logo.png')#Say that the background image is always going to be with the script , so incase the folder moves for expample from desktop to documents , the file is still findable 
+logo_image_path = os.path.join(current_directory, 'data/Logo.png')#Say that the background image is always going to be with the script , so incase the folder moves for expample from desktop to documents , the file is still findable 
 logo_image = tk.PhotoImage(file=logo_image_path)#Load image 
 logo_label = tk.Label(app, image = logo_image)#Make it into a label 
 logo_label.pack(padx=10, pady=1)#print the label in that position  (x,y) 
