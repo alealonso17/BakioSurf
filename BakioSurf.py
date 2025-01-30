@@ -44,7 +44,7 @@ def delete_short_videos(folder_path): #Function in which you give it a directory
 
                 
                 video.release()
-                if duration < 3: # If the duration is < 3 ;
+                if duration < 4: # If the duration is < 3 ;
                     os.remove(file_path) #remove the fil 
                     print(f"Deleted: {file_path}") #Show that u removed the file 
             except Exception as e: #An error in case something bad happens 
@@ -60,18 +60,23 @@ app.title("BAKIO SURF CLEANER")#Tittle of the window
 
 #Background configuration -------------------> 
 
-Background_image = tk.PhotoImage(file='/Users/alejandroalonso/Desktop/Universidad/Proyectos Personales/BakioSurf/Background.png')#Storage the image for the background 
+current_directory = os.path.dirname(os.path.abspath(__file__)) #load the curreent directory of the script 
+Background_image_path = os.path.join(current_directory, 'Background.png')#Say that the background image is always going to be with the script , so incase the folder moves for expample from desktop to documents , the file is still findable 
+
+
+Background_image = tk.PhotoImage(file=Background_image_path)#Storage the image for the background 
 Background_label = tk.Label(app, image = Background_image) #Create a label with the image 
 Background_label.place(relwidth=1, relheight=1) # This makes that the background is full screen 
 
 
 #Load Company logo 
-logo_image = tk.PhotoImage(file='/Users/alejandroalonso/Desktop/Universidad/Proyectos Personales/BakioSurf/Logo.png')#Load image 
+logo_image_path = os.path.join(current_directory, 'Logo.png')#Say that the background image is always going to be with the script , so incase the folder moves for expample from desktop to documents , the file is still findable 
+logo_image = tk.PhotoImage(file=logo_image_path)#Load image 
 logo_label = tk.Label(app, image = logo_image)#Make it into a label 
 logo_label.pack(padx=10, pady=10)#print the label in that position  (x,y) 
 
 
-title_label = tk.Label(app, text="Bakio Surf Cleaner", font=("Times New Roman", 50), fg="yellow") #Tittle Showed on screen
+title_label = tk.Label(app, text="🌊 Bakio Surf Cleaner 🌊", font=("Times New Roman", 50), fg="yellow") #Tittle Showed on screen
 title_label.pack(pady=10)#Where is the title 
 
 sub_label = tk.Label(app, text="Selecciona la carpeta que quieres limpiar de clips cortos", font=("Times New Roman",20 ),fg='white') #INtructions 
@@ -81,7 +86,8 @@ select_button = tk.Button(app, text="Select Folder", command=select_folder) # In
 select_button.pack(pady=200)#Position of the button 
 
 app.geometry("900x900")#window dimension
-app.mainloop() 
+app.mainloop()  # to start the app 
+
 
 
 
