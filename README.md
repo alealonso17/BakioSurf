@@ -44,3 +44,28 @@ Built originally for the **Bakio Surf School**, this project demonstrates how a 
 ---
 
 ## 🧱 Folder Structure  
+
+BakioSurfCleaner/
+│
+├── data/
+│   ├── Background.png
+│   └── Logo.png
+│
+├── main.py
+└── README.md
+
+---
+
+## 🏄 About the Project  
+Created for **Bakio Surf School** to help organize their surf session videos.  
+This small tool was developed in a few hours but has become a daily time-saver for instructors managing hundreds of short clips every week.  
+
+---
+
+## 👨‍💻 Author  
+**Alejandro Alonso López**  
+Software Developer | Computer Science Student | Surf Enthusiast 🌊  
+📍 Aberdeen, Scotland  
+🔗 [LinkedIn]([https://www.linkedin.com/in/alejandroalonsolopez](https://www.linkedin.com/in/alejandro-alonso-lopez-b9145b353/)) · [GitHub](https://github.com/alealonso17)
+
+---
