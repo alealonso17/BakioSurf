@@ -66,6 +66,6 @@ This small tool was developed in a few hours but has become a daily time-saver f
 **Alejandro Alonso López**  
 Software Developer | Computer Science Student | Surf Enthusiast 🌊  
 📍 Aberdeen, Scotland  
-🔗 [LinkedIn]([https://www.linkedin.com/in/alejandroalonsolopez](https://www.linkedin.com/in/alejandro-alonso-lopez-b9145b353/)) · [GitHub](https://github.com/alealonso17)
+
 
 ---
